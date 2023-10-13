@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.navbar {
+    background-color: #000000;
+    color: #fff;
+    height: 70px;
+    border-bottom: 2px solid rgb(65, 15, 129);
+    box-shadow: 0px 0px 10px 2px rgb(70, 9, 141);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 80px;
+    border: 2px solid white;
+    padding-top: 5px;
+    border-radius: 6px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 5px 1px green;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.a1:hover, .a2:hover, .a3:hover, .a4:hover{
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+#head{
+    background-image: linear-gradient(to right, #fa2e00, #FFFB00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+}
+
+.product1{
+    border: 2px solid white;
+    border-radius: 6px;
+    width: 60%;
+    margin-top: 2%;
+    height: auto;
+    margin-left: 22%;
+}
+
+.product1 h1{
+    font-family: 'Teko', sans-serif;
+    color: #fff;
+    font-size: 3rem;
+}
+
+#buknu-box{
+    border-radius: 6px;
+    margin-left: 3%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 7px 2px greenyellow;
+    border: 2px solid white;
+}
+
+#buknu-box:hover{
+    height: 350px;
+    transition: all 0.4s ease;
+}
+
+.details{
+    width: 70%;
+}
+
+.details h1{
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.details p{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+#btn2{
+    color: white;
+    border: 2px solid #fff;
+    padding: 6px 15px;
+    border-radius: 6px;
+    margin-top: 2%;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+#btn2:hover{
+    box-shadow: 0px 0px 5px 2px greenyellow;
+    transition: all 0.4s ease;
+}
+
+#product-display1{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border: 2px solid white;
+    margin-left: 2.5%;
+    border-radius: 6px;
+    margin-top: 3%;
+    height: 550px;
+}
+
+
+.details h1{
+    color: #fff;
+}
+
+.product1 h1:hover{
+    background-image: linear-gradient(to right, #fa2e00, #FFFB00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+.product1 img{
+    height: 200px;
+    padding: 10px;
+}
+
+.product1 img:hover{
+    height: 210px;
+    transition: all 0.4s ease;
+}
+
+.product1 p{
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+#btn1{
+    color: #fff;
+    border: 2px solid white;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-radius: 6px;
+}
+
+#btn1:hover{
+    box-shadow: 0px 0px 5px 2px greenyellow;
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 768px) {
+    *{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .product1 img{
+        height: 100px;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #000000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    #product-display1{
+        height: auto;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .menu li{
+        width: 100%;
+        margin-left: 80px;
+    }
+    #product-display1{
+        display: block;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .details{
+        width: 100%;
+    }
+    #buknu-box{
+        height: 150px;
+    }
+    #buknu-box:hover{
+        height: 135px;
+    }
+}

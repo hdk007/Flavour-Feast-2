@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #000000;
+    color: #fff;
+    height: 70px;
+    border-bottom: 2px solid rgb(65, 15, 129);
+    box-shadow: 0px 0px 10px 2px rgb(70, 9, 141);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 80px;
+    border: 2px solid white;
+    padding-top: 5px;
+    border-radius: 6px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 5px 1px green;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.a1:hover, .a2:hover, .a3:hover, .a4:hover{
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+#contact-head{
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #f90505, #1505a0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+body{
+    background-color: #000;
+}
+
+
+#form-container {
+    background-color: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 2px greenyellow;
+    padding: 20px;
+    width: 60%;
+    margin-left: 20%;
+    font-family: 'Teko', sans-serif;
+}
+
+#space{
+    height: 10vh;
+    background-color: #000;
+}
+
+#space h1{
+    font-family: 'Rubik', sans-serif;
+    background-image: linear-gradient(to right, #ff0d0d, #FFFB00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    background-color: #ffff;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+}
+
+.form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.form-group button:hover{
+    padding: 12px 22px;
+    transition: all 0.1s ease;
+}
+
+#myForm{
+    background-color: #fff;
+}
+
+#phone{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    *{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #000000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-right: 20px;
+    }
+    
+    .menu li{
+        width: 100%;
+        margin-left: 80px;
+    }
+
+    .insta h1{
+        font-size: 1rem;
+    }
+
+    .insta  img{
+        height: 80px;
+    }
+}
